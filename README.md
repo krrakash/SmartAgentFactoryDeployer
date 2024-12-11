@@ -1,5 +1,7 @@
 # Smart Agent Factory Deployer
+
 ## Update your Tenderly Rpc, Project Id, Userame Credentials in `hardhat.config.ts`. 
+
 ```ts
 const config: HardhatUserConfig = {
 solidity: {
@@ -23,6 +25,9 @@ privateVerification : process.env.TENDERLY_PUBLIC_VERIFICATION !== 'true'
 },
 };
 ```
+
+## Install dependencies and run deployer:
+
 ```bash
     npm install
     TENDERLY_AUTOMATIC_VERIFICATION=true npx hardhat run scripts/deploy.ts --network virtual_mainnet
